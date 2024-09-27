@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33717.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseReimbursementSystem", "ExpenseReimbursementSystem\ExpenseReimbursementSystem.csproj", "{8D852286-DC89-4BE4-B6DC-42CC53015BCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D852286-DC89-4BE4-B6DC-42CC53015BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D852286-DC89-4BE4-B6DC-42CC53015BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D852286-DC89-4BE4-B6DC-42CC53015BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D852286-DC89-4BE4-B6DC-42CC53015BCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B96B9B17-5703-4D2B-820A-3687E802D166}
+	EndGlobalSection
+EndGlobal
