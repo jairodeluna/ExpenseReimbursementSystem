@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,11 @@ namespace ExpenseReimbursementSystem
             timer1.Start();
             timer1.Interval = 2000;
             progressBar1.Value = 100;
+            string filePath = "C:\\ExpenseClaims\\";
+            if (!File.Exists(filePath))
+            {
+                Directory.CreateDirectory(filePath);
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)

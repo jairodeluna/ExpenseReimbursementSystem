@@ -182,7 +182,13 @@ namespace ExpenseReimbursementSystem
             DialogResult dialogResult = MessageBox.Show("Do you want to save before closing?", "Exit", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
-                saveDataMenuMethod();
+                // Create and place the csv file in c drive for saving the report automatically.
+                string filePathTemp = "C:\\ExpenseClaims\\";
+                string fileName = "ExpenseClaims-" + DateTime.Now.ToString("yyyyMMdd") + ".csv";
+                var fileStream = File.Create(filePathTemp + fileName);
+                // Set or mark the file as close the prevent from "used another process" error
+                fileStream.Close();
+                ExportDataGridViewToCSV(expenseClaimsDataTable, filePathTemp + fileName);
                 Application.Exit();
             }
             else
