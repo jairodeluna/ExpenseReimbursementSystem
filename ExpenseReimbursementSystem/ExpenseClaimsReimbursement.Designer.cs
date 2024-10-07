@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadDataMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,6 +62,7 @@
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btn_search = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,7 +73,6 @@
             this.Approve = new System.Windows.Forms.DataGridViewImageColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.label8 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.contentPanel.SuspendLayout();
             this.defaultTablePanel.SuspendLayout();
@@ -136,7 +136,7 @@
             // 
             // defaultTablePanel
             // 
-            this.defaultTablePanel.Controls.Add(this.label8);
+            this.defaultTablePanel.Controls.Add(this.btn_search);
             this.defaultTablePanel.Controls.Add(this.btnAddClaims);
             this.defaultTablePanel.Controls.Add(this.txt_search);
             this.defaultTablePanel.Controls.Add(this.expenseClaimsDataTable);
@@ -164,24 +164,23 @@
             // txt_search
             // 
             this.txt_search.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_search.Location = new System.Drawing.Point(101, 13);
+            this.txt_search.Location = new System.Drawing.Point(14, 13);
             this.txt_search.Multiline = true;
             this.txt_search.Name = "txt_search";
             this.txt_search.Size = new System.Drawing.Size(340, 32);
             this.txt_search.TabIndex = 6;
-            this.txt_search.TextChanged += new System.EventHandler(this.txt_search_TextChanged);
             // 
             // expenseClaimsDataTable
             // 
             this.expenseClaimsDataTable.AllowUserToAddRows = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.expenseClaimsDataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.expenseClaimsDataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.expenseClaimsDataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.expenseClaimsDataTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -194,14 +193,14 @@
             this.Approve,
             this.Edit,
             this.Delete});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.expenseClaimsDataTable.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.expenseClaimsDataTable.DefaultCellStyle = dataGridViewCellStyle2;
             this.expenseClaimsDataTable.Location = new System.Drawing.Point(10, 57);
             this.expenseClaimsDataTable.Name = "expenseClaimsDataTable";
             this.expenseClaimsDataTable.RowHeadersVisible = false;
@@ -430,6 +429,20 @@
             this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
             this.dataGridViewImageColumn4.Width = 50;
             // 
+            // btn_search
+            // 
+            this.btn_search.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_search.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_search.Location = new System.Drawing.Point(367, 12);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(110, 33);
+            this.btn_search.TabIndex = 18;
+            this.btn_search.Text = "Search";
+            this.btn_search.UseVisualStyleBackColor = false;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
+            // 
             // Id
             // 
             this.Id.HeaderText = "Claim Id";
@@ -439,7 +452,7 @@
             // 
             this.Description.HeaderText = "Description";
             this.Description.Name = "Description";
-            this.Description.Width = 390;
+            this.Description.Width = 380;
             // 
             // Category
             // 
@@ -466,7 +479,7 @@
             // 
             // View
             // 
-            this.View.HeaderText = "";
+            this.View.HeaderText = "View";
             this.View.Image = global::ExpenseReimbursementSystem.Properties.Resources.view_details;
             this.View.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.View.Name = "View";
@@ -474,15 +487,15 @@
             // 
             // Approve
             // 
-            this.Approve.HeaderText = "";
+            this.Approve.HeaderText = "Approve";
             this.Approve.Image = global::ExpenseReimbursementSystem.Properties.Resources.approved_stamp;
             this.Approve.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.Approve.Name = "Approve";
-            this.Approve.Width = 50;
+            this.Approve.Width = 60;
             // 
             // Edit
             // 
-            this.Edit.HeaderText = "";
+            this.Edit.HeaderText = "Modify";
             this.Edit.Image = global::ExpenseReimbursementSystem.Properties.Resources.edit;
             this.Edit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.Edit.Name = "Edit";
@@ -490,22 +503,11 @@
             // 
             // Delete
             // 
-            this.Delete.HeaderText = "";
+            this.Delete.HeaderText = "Delete";
             this.Delete.Image = global::ExpenseReimbursementSystem.Properties.Resources.delete;
             this.Delete.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.Delete.Name = "Delete";
             this.Delete.Width = 50;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(11, 20);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 18);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Search:";
             // 
             // ExpenseClaimsReimbursement
             // 
@@ -567,6 +569,7 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn3;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn4;
         private System.Windows.Forms.ComboBox cmb_status;
+        private System.Windows.Forms.Button btn_search;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Description;
         private System.Windows.Forms.DataGridViewTextBoxColumn Category;
@@ -577,6 +580,5 @@
         private System.Windows.Forms.DataGridViewImageColumn Approve;
         private System.Windows.Forms.DataGridViewImageColumn Edit;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
-        private System.Windows.Forms.Label label8;
     }
 }
