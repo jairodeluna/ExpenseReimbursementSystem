@@ -55,7 +55,7 @@ namespace ExpenseReimbursementSystem
             txt_category.Text = "";
             txt_amount.Text = "";
             dateTimePicker1.Value = DateTime.Now;
-            cmb_status.SelectedIndex = 0;
+            cmb_status.SelectedIndex = 1;
 
             // Inform the sytem that Addition process has been made
             processStep = "Add";
